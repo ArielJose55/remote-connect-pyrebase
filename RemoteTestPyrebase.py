@@ -34,8 +34,8 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
-auth.create_user_with_email_and_password("email", "password")
-auth.sign_in_with_email_and_password("email", "password")
+auth.create_user_with_email_and_password(const.EMAIL, const.PASSWORD)
+auth.sign_in_with_email_and_password(const.EMAIL, const.PASSWORD)
 user = auth.sign_in_with_email_and_password()
 
 
